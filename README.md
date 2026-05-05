@@ -39,7 +39,25 @@ Source is in `cli/`. Requires Go 1.22 or later.
 git clone https://github.com/mesutoezdil/kaesekuchen
 cd kaesekuchen
 go build -o kk ./cli/
-mv kk /usr/local/bin/kk
+```
+
+To make `kk` available system-wide:
+
+```sh
+sudo mv kk /usr/local/bin/kk
+```
+
+If you do not have sudo access, move it to a directory in your PATH instead:
+
+```sh
+mkdir -p ~/bin
+mv kk ~/bin/kk
+```
+
+Then make sure `~/bin` is in your PATH. Add this to your `~/.zshrc` or `~/.bashrc` if it is not already there:
+
+```sh
+export PATH="$HOME/bin:$PATH"
 ```
 
 
