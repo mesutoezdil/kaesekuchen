@@ -1,5 +1,17 @@
 # Kaesekuchen
 
+```
+                         ___________________________
+                       /                             \
+                      /     K Ä S E K U C H E N      \
+                    /                                   \
+      _____________/_____________________________________ \_____________
+     |                                                                   |
+     |      echter Käse · Eier · Zucker · Vanille · Zitronenschale      |
+     |                                                                   |
+     |___________________________________________________________________|
+```
+
 This repository documents the Kaesekuchen in the only way it deserves to be documented: completely, without compromise, and with the seriousness the subject demands.
 
 The Kaesekuchen is not a simple cake. It is a position. A stance. An answer to the question of what dessert looks like when it has nothing left to prove.
