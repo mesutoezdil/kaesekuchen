@@ -26,7 +26,7 @@ func cmdAudit() {
 	fmt.Println("Answer honestly. The result reflects your cake, not your intentions.")
 	fmt.Println()
 
-	dairy := ask(scanner, "Primary dairy ingredient (cheese, quark, or other):")
+	dairy := ask(scanner, "Primary dairy ingredient (cheese / quark / other):")
 	switch {
 	case dairy == "quark":
 		violations = append(violations, violation{
@@ -42,42 +42,28 @@ func cmdAudit() {
 		})
 	}
 
-	baked := ask(scanner, "Was it baked?")
-	if baked != "yes" {
+	if !yesNo(scanner, "Was it baked?") {
 		violations = append(violations, violation{
 			code:    "NOT_BAKED",
 			message: "a Kaesekuchen must be baked. gelatine is not heat.",
 		})
 	}
 
-	base := ask(scanner, "Base type (none, Mürbeteig, Karottenkuchen, Graham cracker, biscuit, or other):")
-	switch base {
-	case "none", "mürbeteig", "karottenkuchen":
-		// acceptable
-	case "graham cracker", "graham", "biscuit", "digestive", "keks", "cracker":
+	if yesNo(scanner, "Is the base a Graham cracker, Digestive, or any other biscuit crust?") {
 		violations = append(violations, violation{
 			code:    "BISCUIT_BASE",
 			message: "processed crumb substrates belong to American cheesecake traditions. they should remain there.",
 		})
-	default:
-		if base != "" {
-			violations = append(violations, violation{
-				code:    "UNRECOGNIZED_BASE",
-				message: fmt.Sprintf("%q is not a recognized base for Kaesekuchen", base),
-			})
-		}
 	}
 
-	fruit := ask(scanner, "Does it contain fruit, or is there fruit on top?")
-	if fruit == "yes" {
+	if yesNo(scanner, "Does it contain fruit, or is there fruit on top?") {
 		violations = append(violations, violation{
 			code:    "FRUIT_PRESENT",
 			message: "fruit does not belong in or on a Kaesekuchen. if the cheese needed help, find better cheese.",
 		})
 	}
 
-	temp := ask(scanner, "Serving temperature (cold, room temperature, or warm):")
-	if temp == "warm" || temp == "room temperature" {
+	if !yesNo(scanner, "Was it served cold?") {
 		violations = append(violations, violation{
 			code:    "WRONG_TEMPERATURE",
 			message: "Kaesekuchen is served cold. the structure of the filling is designed for cold.",

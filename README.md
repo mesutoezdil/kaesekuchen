@@ -130,11 +130,11 @@ Failing case:
 Kaesekuchen audit.
 Answer honestly. The result reflects your cake, not your intentions.
 
-Primary dairy ingredient (cheese, quark, or other): quark
-Was it baked? no
-Base type (none, Mürbeteig, Karottenkuchen, Graham cracker, biscuit, or other): graham cracker
-Does it contain fruit, or is there fruit on top? yes
-Serving temperature (cold, room temperature, or warm): warm
+Primary dairy ingredient (cheese / quark / other): quark
+  Was it baked? [yes/no] no
+  Is the base a Graham cracker, Digestive, or any other biscuit crust? [yes/no] yes
+  Does it contain fruit, or is there fruit on top? [yes/no] yes
+  Was it served cold? [yes/no] no
 
 audit failed. 5 violation(s):
 
@@ -162,11 +162,11 @@ Passing case:
 Kaesekuchen audit.
 Answer honestly. The result reflects your cake, not your intentions.
 
-Primary dairy ingredient (cheese, quark, or other): cheese
-Was it baked? yes
-Base type (none, Mürbeteig, Karottenkuchen, Graham cracker, biscuit, or other): none
-Does it contain fruit, or is there fruit on top? no
-Serving temperature (cold, room temperature, or warm): cold
+Primary dairy ingredient (cheese / quark / other): cheese
+  Was it baked? [yes/no] yes
+  Is the base a Graham cracker, Digestive, or any other biscuit crust? [yes/no] no
+  Does it contain fruit, or is there fruit on top? [yes/no] no
+  Was it served cold? [yes/no] yes
 
 audit passed.
 
