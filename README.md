@@ -1,15 +1,11 @@
 # Kaesekuchen
 
 ```
-                         ___________________________
-                       /                             \
-                      /     K Ä S E K U C H E N      \
-                    /                                   \
-      _____________/_____________________________________ \_____________
-     |                                                                   |
-     |      echter Käse · Eier · Zucker · Vanille · Zitronenschale      |
-     |                                                                   |
-     |___________________________________________________________________|
+K   K   A   EEEEE  SSSS EEEEE K   K U   U  CCC  H   H EEEEE N   N
+K  K   A A  E     S     E     K  K  U   U C     H   H E     NN  N
+KKK   AAAAA EEE    SSS  EEE   KKK   U   U C     HHHHH EEE   N N N
+K  K  A   A E         S E     K  K  U   U C     H   H E     N  NN
+K   K A   A EEEEE SSSS  EEEEE K   K  UUU   CCC  H   H EEEEE N   N
 ```
 
 This repository documents the Kaesekuchen in the only way it deserves to be documented: completely, without compromise, and with the seriousness the subject demands.
